@@ -1,9 +1,29 @@
 import StarRating from "../Ratings/StarRating";
+import { FaTrashAlt } from "react-icons/fa";
 
-const Color = ({ title, color, rating }) => {
+const Color = ({
+    id,
+    title,
+    color,
+    rating,
+    onRemove = (f) => f,
+    onRate = (f) => f,
+}) => {
     return (
-        <section style={{ width: 250, margin: "20px auto" }}>
-            <h1 style={{ textAlign: "center", marginTop: "1em" }}>{title}</h1>
+        <section style={{ width: 300, margin: "20px auto" }}>
+            <h1 style={{ textAlign: "center", marginTop: "1em" }}>
+                {title}{" "}
+                <button
+                    style={{
+                        background: "none",
+                        border: "none",
+                    }}
+                    onClick={() => onRemove(id)}
+                >
+                    <FaTrashAlt style={{ fontSize: 30 }} />
+                </button>
+            </h1>
+
             <div
                 style={{
                     height: 100,
@@ -13,7 +33,10 @@ const Color = ({ title, color, rating }) => {
                     margin: "auto",
                 }}
             />
-            <StarRating selectedStars={rating} />
+            <StarRating
+                selectedStars={rating}
+                onRate={(rating) => onRate(id, rating)}
+            />
         </section>
     );
 };
