@@ -32,3 +32,8 @@
     border: none;
     background-color: #fff;
 }
+
+.colorList {
+    display: flex;
+    flex-wrap: wrap;
+}

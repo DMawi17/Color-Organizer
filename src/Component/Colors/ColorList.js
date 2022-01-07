@@ -8,7 +8,7 @@ const ColorList = ({
     if (!colors.length) return <div>No Colors Listed. (Add a Color)</div>;
 
     return (
-        <>
+        <div className="colorList">
             {colors.map((color) => (
                 <Color
                     key={color.id}
@@ -17,7 +17,7 @@ const ColorList = ({
                     onRate={onRateColor}
                 />
             ))}
-        </>
+        </div>
     );
 };
 

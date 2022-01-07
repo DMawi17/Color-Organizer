@@ -10,7 +10,7 @@ const Color = ({
     onRate = (f) => f,
 }) => {
     return (
-        <section style={{ width: 300, margin: "20px auto" }}>
+        <section style={{ width: 300, margin: "20px" }}>
             <h1 style={{ textAlign: "center", marginTop: "1em" }}>
                 {title}{" "}
                 <button
