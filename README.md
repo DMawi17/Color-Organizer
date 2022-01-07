@@ -1,1 +1,1 @@
-[Color Organizer](https://youthful-raman-b92e64.netlify.app/) - Netlify Link
+[Color Organizer](https://color-organiser.netlify.app) - Netlify Link
