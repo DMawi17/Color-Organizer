@@ -6,12 +6,12 @@
     display: flex;
     justify-content: space-between;
     gap: 3;
-    width: 50%;
+    width: 400px;
 }
 
 #txtInput {
     height: 25px;
-    width: 65%;
+    width: 250px;
     border-radius: 3px;
     border: none;
     padding-left: 10px;
@@ -19,14 +19,14 @@
 
 #hexInput {
     height: 25px;
-    width: 20%;
+    width: 60px;
     border-radius: 3px;
     border: none;
 }
 
 .btn {
     height: 27px;
-    width: 10%;
+    width: 70px;
 
     border-radius: 3px;
     border: none;
